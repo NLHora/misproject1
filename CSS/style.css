@@ -1,0 +1,262 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root{
+  --primary: #062b5b; /* refined blue */
+  --muted: #6b7280;    /* gray for secondary text */
+  --bg: #f6f8fb;       /* page background */
+  --card: #ffffff;     /* card background */
+  --accent: #60a5ff;   /* accent blue */
+  --radius: 12px;
+  --shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+  --container: 1000px;
+  --max-width: 1000px;
+}
+
+/* Reset & base */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:#0f1724;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Utility container used site-wide */
+.container{
+  max-width:var(--container);
+  margin:2.25rem auto;
+  padding:1.25rem;
+}
+
+/* Card-like content blocks */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:1.25rem;
+}
+.umd-video {
+    width: 50%;           /* adjust size */
+    max-width: 450px;     /* limits size */
+    display: block;       
+    margin: 20px auto;    /* centers it */
+    border-radius: 10px;
+}
+
+/* Back button (consistent style) */
+.back-button{
+  display:inline-block;
+  padding:.6rem 1rem;
+  background:transparent;
+  color:var(--primary);
+  border:1px solid rgba(11,99,212,0.12);
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+}
+.back-button:hover{background:rgba(11,99,212,0.06)}
+
+/* Header */
+.video-box {
+  width: 100%;
+  max-width: 220px; /* matches your image width */
+  border-radius: 8px;
+  display: block;
+  margin: 0.5rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.resume {
+  display: block;
+  max-width: 100%;   /* scales down on small screens */
+  width: 800px;      /* desktop size */
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Download button */
+.download-btn {
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 0.7rem 1.2rem;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.25s;
+}
+
+.download-btn:hover {
+  background: #004a94;
+}
+.header{
+  text-align:center;
+  margin-bottom:1rem;
+}
+.header h1{font-size:2rem;color:var(--primary);margin-bottom:.25rem}
+.header .subtitle{color:var(--muted);font-size:.95rem}
+.header-container{
+  max-width: var(--max-width); /* aligns with other content boxes */
+  margin: 2rem auto; /* spacing from nav and other elements */
+  background-color: #062b5b; /* navy */
+  color: white;
+  text-align: center; /* centers the text */
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius); /* matches other boxes */
+  box-shadow: var(--shadow); /* adds subtle shadow like main content boxes */
+}
+.header-container,
+header,
+h1,
+h2 {
+    animation: floatIn 0.9s ease-out forwards;
+}
+
+/* Optional: subtitle below header */
+.header-container p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #e0e7ff; /* lighter accent for subtitle */
+}
+
+
+/* MAIN IMAGE (HEADSHOT) STYLES */
+.headshot-container {
+  width: 200px;  /* fixed width box */
+  height: 200px; /* fixed height box */
+  overflow: hidden;
+  margin: 1rem auto; /* center horizontally */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.headshot-container img.headshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills box without distortion */
+  display: block;
+}
+
+/* Navigation */
+.nav-container {
+  position: sticky; /* sticky nav bar */
+  top: 0;
+  background-color: #062b5b; /* navy color */
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* center nav items */
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #f2f2f3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background: #005fa3;
+  color: #ffffff;
+}
+/* Main content block */
+main{
+  max-width:var(--max-width);
+  margin:1rem auto;
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:2rem;
+  box-shadow:var(--shadow);
+}
+
+main h2{color:var(--primary);margin-bottom:.5rem}
+main h3{color:var(--primary);margin-bottom:.5rem}
+main p{color:var(--muted);margin-bottom:1rem}
+
+/* Headshot */
+.headshot{float:left;width:160px;margin-right:1rem;border-radius:10px;object-fit:cover}
+
+/* Horizontal boxes (home page) */
+.horizontal-box-container{max-width:var(--max-width);margin:1.5rem auto;padding:0 1rem}
+.horizontal-boxes{display:flex;gap:1rem}
+.horizontal-boxes .content-box{flex:1;background:linear-gradient(180deg,#ffffff,#fbfdff);border-radius:10px;padding:1rem;box-shadow:0 4px 12px rgba(2,6,23,0.04);text-align:center}
+.horizontal-boxes .content-box img{max-width:220px;border-radius:8px;margin:0 auto 1rem;display:block}
+.horizontal-boxes .box-text h3{margin-bottom:.5rem;color:var(--primary)}
+
+/* Galleries (ski/hike) */
+.gallery{max-width:var(--max-width);margin:1rem auto;display:flex;gap:1rem}
+.gallery .gallery-item{flex:1;border-radius:10px;overflow:hidden;background:var(--card);box-shadow:0 6px 18px rgba(2,6,23,0.04);display:flex;align-items:center;justify-content:center}
+.gallery .gallery-item img{width:100%;height:200px;object-fit:cover;display:block}
+
+/* Career cards grid */
+.career-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem}
+.career-item{background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+.career-item h3{margin-bottom:.35rem}
+.career-item p{color:var(--muted)}
+.career-item ul{margin-left:1rem;color:var(--muted)}
+
+/* Buttons (consistent style) */
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:10px;background:var(--primary);color:white;text-decoration:none;font-weight:600;border:none;cursor:pointer}
+.btn.secondary{background:transparent;color:var(--primary);border:1px solid rgba(11,99,212,0.12)}
+.btn:active{transform:translateY(1px)}
+
+/* Forms and textarea (for textboxes added earlier) */
+.text-boxes-container{max-width:var(--max-width);margin:1.25rem auto;display:flex;gap:1rem;padding:0 1rem}
+.text-box{flex:1}
+.text-box textarea{width:100%;min-height:160px;padding:.75rem;border-radius:8px;border:1px solid #e6eefc;background:#fbfdff;color:#0f1724}
+.text-box textarea:focus{outline:none;box-shadow:0 6px 18px rgba(11,99,212,0.08);border-color:var(--accent)}
+
+/* Footer */
+footer{max-width:var(--max-width);margin:2rem auto 4rem;text-align:center;color:var(--muted)}
+
+/* Utility: smaller text */
+.small{font-size:.92rem;color:var(--muted)}
+
+/* Responsive adjustments */
+@media (max-width:900px){
+  .horizontal-boxes{flex-direction:column}
+  .gallery{flex-direction:column}
+  .career-list{grid-template-columns:1fr}
+  .text-boxes-container{flex-direction:column}
+  .headshot{float:none;margin:0 auto 1rem;display:block}
+  main{padding:1.25rem}
+}
+
+/* Backwards compatible selectors (keep previous class names used in other pages) */
+.ski-gallery,.hike-gallery{display:flex;gap:1rem;max-width:var(--max-width);margin:1rem auto}
+.ski-gallery .ski-image,.hike-gallery .hike-image{flex:1;border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+.ski-gallery .ski-image img,.hike-gallery .hike-image img{width:100%;height:200px;object-fit:cover}
+.hike-gallery .hike-image img.deltalake{object-position:center top}
+
+/* retain career-item styles if present */
+.career-item{background:var(--card);padding:1rem;border-radius:10px}
+
+/* small accessibility focus states */
+a:focus,button:focus,textarea:focus{outline:3px solid rgba(11,99,212,0.12);outline-offset:2px}
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
