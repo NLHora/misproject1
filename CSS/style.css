@@ -184,7 +184,13 @@ nav a {
   font-weight: 600;
   transition: 0.2s;
 }
-
+.video-credits {
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
 nav a:hover {
   background: #005fa3;
   color: #ffffff;
@@ -274,3 +280,4 @@ a:focus,button:focus,textarea:focus{outline:3px solid rgba(11,99,212,0.12);outli
     }
 
 }
+
