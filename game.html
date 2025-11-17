@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird Game - Fly High!</title>
-    <p class="video-credits">Game created by: Natalie Hora, Ellie Fields, Lilly Critchley, Vivian Cruz Torres, Marlee Hogenson</p>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -293,38 +292,42 @@
             <p class="subtitle">Fly through the pipes and try to get the highest score!</p>
         </div>
             
-        <div class="game-container">
-            <div class="game-stats">
-                <div class="stat">Score: <span id="currentScore">0</span></div>
-                <div class="stat high-score">High Score: <span id="highScore">0</span></div>
-                <div class="stat">Level: <span id="currentLevel">1</span></div>
-            </div>
+       <div class="game-container">
+    <div class="game-stats">
+        <div class="stat">Score: <span id="currentScore">0</span></div>
+        <div class="stat high-score">High Score: <span id="highScore">0</span></div>
+        <div class="stat">Level: <span id="currentLevel">1</span></div>
+    </div>
 
-            <div class="game-canvas-container">
-                <canvas id="gameCanvas" width="640" height="360"></canvas>
-            </div>
+    <div class="game-canvas-container">
+        <canvas id="gameCanvas" width="640" height="360"></canvas>
+    </div>
 
-            <div class="game-controls">
-                <button class="game-button accelerate-button" id="accelerateBtn" onmousedown="accelerate(-0.15)" onmouseup="accelerate(0.05)">
-                    <i class="fas fa-rocket"></i> FLAP!
-                </button>
-                <button class="game-button" id="startBtn" onclick="startGame()">Start Game</button>
-                <button class="game-button" id="pauseBtn" onclick="togglePause()" style="display: none;">Pause</button>
-                <button class="game-button" id="restartBtn" onclick="restartGame()" style="display: none;">Restart</button>
-            </div>
+    <div class="game-controls">
+        <button class="game-button accelerate-button" id="accelerateBtn" onmousedown="accelerate(-0.15)" onmouseup="accelerate(0.05)">
+            <i class="fas fa-rocket"></i> FLAP!
+        </button>
+        <button class="game-button" id="startBtn" onclick="startGame()">Start Game</button>
+        <button class="game-button" id="pauseBtn" onclick="togglePause()" style="display: none;">Pause</button>
+        <button class="game-button" id="restartBtn" onclick="restartGame()" style="display: none;">Restart</button>
+    </div>
 
-            <div class="game-message" id="gameMessage">Click "Start Game" to begin flying! 🚀</div>
+    <div class="game-message" id="gameMessage">Click "Start Game" to begin flying! 🚀</div>
 
-            <div class="instructions">
-                <h3><i class="fas fa-info-circle"></i> How to Play</h3>
-                <ul>
-                    <li><i class="fas fa-mouse-pointer"></i> Click and hold the "FLAP!" button to make the bird fly up</li>
-                    <li><i class="fas fa-arrow-up"></i> Release the button to let the bird fall down</li>
-                    <li><i class="fas fa-pipe"></i> Avoid hitting the green pipes or the ground</li>
-                    <li><i class="fas fa-star"></i> Pass through pipes to increase your score</li>
-                    <li><i class="fas fa-trophy"></i> Try to beat your high score!</li>
-                </ul>
-            </div>
+    <div class="instructions">
+        <h3><i class="fas fa-info-circle"></i> How to Play</h3>
+        <ul>
+            <li><i class="fas fa-mouse-pointer"></i> Click and hold the "FLAP!" button to make the bird fly up</li>
+            <li><i class="fas fa-arrow-up"></i> Release the button to let the bird fall down</li>
+            <li><i class="fas fa-pipe"></i> Avoid hitting the green pipes or the ground</li>
+            <li><i class="fas fa-star"></i> Pass through pipes to increase your score</li>
+            <li><i class="fas fa-trophy"></i> Try to beat your high score!</li>
+        </ul>
+    </div>
+
+    <!-- ✅ Add credits here -->
+    <p class="video-credits">Game created by: Natalie Hora, Ellie Fields, Lilly Critchley, Vivian Cruz Torres, Marlee Hogenson</p>
+</div>
         </div>
     </div>
 
@@ -722,4 +725,5 @@
                 </audio>
 </body>
 </html>
+
 
