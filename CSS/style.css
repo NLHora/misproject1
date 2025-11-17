@@ -184,9 +184,13 @@ nav a {
   font-weight: 600;
   transition: 0.2s;
 }
+.video-container {
+    text-align: center; /* centers video & text */
+    margin: 2rem 0;
+}
+
 .video-credits {
-    text-align: center;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--muted);
     margin-top: 0.5rem;
     font-style: italic;
@@ -280,4 +284,5 @@ a:focus,button:focus,textarea:focus{outline:3px solid rgba(11,99,212,0.12);outli
     }
 
 }
+
 
