@@ -32,6 +32,19 @@ body{
   margin:2.25rem auto;
   padding:1.25rem;
 }
+.horizontal-boxes .content-box img {
+    width: 100%;          /* fill the content-box */
+    max-width: 220px;     /* optional: keeps it from being huge on large screens */
+    height: auto;         /* maintains aspect ratio */
+    border-radius: 8px;
+    margin: 0 auto 1rem;
+    display: block;
+}
+@media (max-width: 600px) {
+    .horizontal-boxes .content-box img {
+        max-width: 180px;  /* or whatever fits better */
+    }
+}
 
 /* Card-like content blocks */
 .card{
@@ -259,4 +272,5 @@ a:focus,button:focus,textarea:focus{outline:3px solid rgba(11,99,212,0.12);outli
         opacity: 1;
         transform: translateY(0);
     }
+
 }
